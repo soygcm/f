@@ -2,9 +2,7 @@
 
 # Clase para definir una pregunta
 class Pregunta:
-    def __init__(self, pregunta, maximo_aceptado):
-        self.pregunta = pregunta
-        self.maximo_aceptado = maximo_aceptado
+    def __init__(self, pregunta, maximo_aceptado): self.pregunta = pregunta; self.maximo_aceptado = maximo_aceptado
 
 # Lista de preguntas
 preguntas = [
