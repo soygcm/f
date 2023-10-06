@@ -1,4 +1,6 @@
-// Este programa sirve para saber que tan desordenado es una persona
+const readline = require('readline');
+
+// Este programa sirve para saber qué tan desordenada es una persona
 
 // Definir una pregunta
 function Pregunta(pregunta, maximoAceptado) {
@@ -16,14 +18,29 @@ const preguntas = [
 
 // Función para averiguar si es perezoso
 function averiguarSiEsPerezoso(pregunta) {
-    const respuesta = Number(prompt(pregunta.pregunta));
-    return respuesta > pregunta.maximoAceptado;
+    return new Promise((resolve) => {
+        const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+        
+        rl.question(pregunta.pregunta, (respuesta) => {
+            rl.close();
+            const respuestaNum = Number(respuesta);
+            resolve(respuestaNum > pregunta.maximoAceptado);
+        });
+    });
 }
 
 // Programa principal
-function main() {
-    const preguntasEsPerezoso = preguntas.map(pregunta => averiguarSiEsPerezoso(pregunta));
-    const totalPerezosas = preguntasEsPerezoso.filter(esPerezoso => esPerezoso).length;
+async function main() {
+    const preguntasEsPerezoso = [];
+    for (const pregunta of preguntas) {
+        const esPerezoso = await averiguarSiEsPerezoso(pregunta);
+        preguntasEsPerezoso.push(esPerezoso);
+    }
+    
+    const totalPerezosas = preguntasEsPerezoso.filter((esPerezoso) => esPerezoso).length;
     
     if (totalPerezosas > 2) {
         console.log("Eres una persona perezosa");
