@@ -12,15 +12,15 @@ db = "todo.txt"
 
 > Let define some data types
 
-Task ->
-    done,
-    description
+Task =
+    done = Boolean,
+    description = Text
 
-Line -> Text
-File Name -> Text
-Arguments -> Text List
-Tasks -> Task List
-Command -> Text
+Line = Text
+File Name = Text
+Arguments = Text List
+Tasks = <Task> List
+Command = Text
 
 > We need to define the functions
 
@@ -35,9 +35,9 @@ using System / get tasks from <db> File Name  =
     file = open file name from system
     get tasks from file
 
-using System / save Task List in a <db> File Name  =
+using System / save Tasks in a <db> File Name  =
     open file from system
-    write task list in file
+    write tasks in file
     save file
 
 > These are to work with tasks:
@@ -59,16 +59,16 @@ get task from Arguments  =
 get the / line for the db / from the Task  =
     text (description, done)
 
-add Task to Task List =
-    task list + task line for the db
+add Task to Tasks =
+    tasks + task line for the db
 
 > These are to show messages in the CLI
 
-Show list of Task List =
+Show list of Tasks =
     show "To-Do List:"
-    for each task in task list:
-        using <number> starting in 1
-        show text (number, ". ", task)
+    for each task in tasks:
+        using <number> as index starting in 1:
+            show text (number, ". ", task)
 
 Show tutorial =
     show "Usage: f todo.f add|list|remove [task]"
@@ -80,8 +80,8 @@ Show add task tutorial =
 
 using System and File Name <db> /  
 Show list in cli =
-    we need to get the / task list = get tasks from db
-    show list of task list
+    we need to get the / tasks = get tasks from db
+    show list of tasks
 
 using System, File Name <db> and Show we can /  
 add with Arguments =
@@ -90,10 +90,10 @@ add with Arguments =
     if arguments have no task description:
         show add task tutorial
     else:
-        task list = get tasks from db
+        tasks = get tasks from db
         task = get task from arguments
-        add task to task list
-        save task list in a db
+        add task to tasks
+        save tasks in a db
         
 
 using Arguments, System, Show and File Name <db> /  

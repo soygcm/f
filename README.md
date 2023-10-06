@@ -90,13 +90,19 @@ you can / promote / the Student = student _ grade = + 1
 
 13. There are pre defined functions to help you communicate your ideas.
 
+### Pending
+
 14. The name of a function can be repeated, in order to perform additional steps (similar to recursion? or chaining?)
+
+15. Se puede escribir en una sóla linea? para que sirve el punto?
+
+18. How to chain?
+
+https://www.youtube.com/watch?v=tDexugp8EmM&ab_channel=ThePrimeTime
+
 
 ## Examples
 
 ### CLI Todo list
 
-```
 
-
-```
