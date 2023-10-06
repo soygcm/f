@@ -8,6 +8,7 @@
    (pregunta "¿Cuántas veces a la semana no barres?" 4)])
 
 (defn averiguar-si-es-perezoso [pregunta]
+  (println (:pregunta pregunta)) ; Print the question
   (let [respuesta (read-line)]
     (> (Integer. respuesta) (:maximo-aceptado pregunta))))
 
