@@ -15,8 +15,7 @@ preguntas = <Pregunta> List ->
 > Algunas funciones que necesitamos
 usando Ask y Pregunta <pregunta, es perezoso> /   
 averiguar si es perezoso =
-    respuesta = ask pregunta
-    respuesta = respuesta as number
+    respuesta = ask pregunta _ as number
     respuesta > es perezoso
 
 > Programa principal
