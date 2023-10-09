@@ -18,7 +18,7 @@ Task =
 
 Line = Text
 File Name = Text
-Arguments = Text List
+Arguments = <Text> List
 Tasks = <Task> List
 Command = Text
 
@@ -46,13 +46,11 @@ get task from Line =
     get / description and done = split line with "|"
     description = description and done in position 0
     done = description and done in position 1
-    Task -> 
-        description = description,
-        done = done
+    Task description, done
 
 get task from Arguments  =
     description = arguments in position 2
-    Task -> 
+    Task
         description = description, 
         done = false
 

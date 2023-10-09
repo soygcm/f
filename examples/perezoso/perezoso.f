@@ -6,7 +6,7 @@ Pregunta =
     maximo aceptado para saber si / es perezoso = Number,
 
 > Las preguntas que vamos a hacer
-preguntas = <Pregunta> List ->
+preguntas = <Pregunta> List
     _ "¿Cuántas veces al día dejas para después algo que tenías que hacer?", 3,
     _ "¿Cuántas veces a la semana dejas ropa tirada en el cuarto hasta el día siguiente?", 1,
     _ "¿Cuántas veces a la semana no lavas los platos hasta el día siguiente?", 1,

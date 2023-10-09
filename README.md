@@ -90,13 +90,14 @@ you can / promote / the Student = student _ grade = + 1
 
 13. There are pre defined functions to help you communicate your ideas.
 
-### Pending
+15. Se puede escribir en una sóla linea con diamantes o punto.
 
-14. The name of a function can be repeated, in order to perform additional steps (similar to recursion? or chaining?)
+### FAQ
 
-15. Se puede escribir en una sóla linea? para que sirve el punto?
+18. How to chain? Guión bajo? Que hace guión bajo realmente?
+_ Access to a context that contains all the functions of some data type
 
-18. How to chain?
+19. How to use indentation?
 
 https://www.youtube.com/watch?v=tDexugp8EmM&ab_channel=ThePrimeTime
 
