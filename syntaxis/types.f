@@ -21,6 +21,9 @@ f =
         pages = 523,
         author = "Boris"
         editorial = "Simie"
+
+    book 
+    _ read = true
     
 
     
