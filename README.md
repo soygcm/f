@@ -92,12 +92,22 @@ you can / promote / the Student = student _ grade = + 1
 
 15. Se puede escribir en una sóla linea con diamantes o punto.
 
+18. You can access and transform entities using underscore token.
+
+
+
 ### FAQ
 
-18. How to chain? Guión bajo? Que hace guión bajo realmente?
-_ Access to a context that contains all the functions of some data type
+20. Is everything a list? what is a list?
 
 19. How to use indentation?
+
+21. Is the name of a function completle pointless?
+
+22. What is inmutabilidad y porque la necesitamos?
+
+https://www.youtube.com/watch?v=mhkoWp5Akww&ab_channel=TheVimeagen
+
 
 https://www.youtube.com/watch?v=tDexugp8EmM&ab_channel=ThePrimeTime
 
