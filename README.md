@@ -95,8 +95,7 @@ you can / promote / the Student = student _ grade = + 1
 18. You can access and transform entities using underscore token.
 
 
-
-### FAQ
+### TO DO
 
 20. Is everything a list? what is a list?
 
@@ -105,6 +104,10 @@ you can / promote / the Student = student _ grade = + 1
 21. Is the name of a function completle pointless?
 
 22. What is inmutabilidad y porque la necesitamos?
+
+23. Pattern matching
+
+24. Recursion
 
 https://www.youtube.com/watch?v=mhkoWp5Akww&ab_channel=TheVimeagen
 
