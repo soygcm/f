@@ -16,15 +16,15 @@ preguntas = <Pregunta> List
 usando Ask y Pregunta <pregunta, es perezoso> /   
 averiguar si es perezoso =
     respuesta = ask pregunta _ as number
-    respuesta > es perezoso
+    return respuesta > es perezoso
 
 > Programa principal
 f = 
-    lista de / preguntas es perezoso = 
+    lista de / respuestas es perezoso = 
         filter each pregunta in preguntas:
-            usando <pregunta> / averiguar si es perezoso 
+            averiguar si es perezoso 
 
-    / total de cuantas / preguntas es perezoso = sum preguntas es perezoso
+    / total de cuantas / respuestas es perezoso = sum respuestas es perezoso
 
     if total de cuantas > 2:
         show "Eres una persona perezosa"

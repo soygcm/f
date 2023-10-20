@@ -1,21 +1,22 @@
 
-<Generic> Perform = (Element -> Nothing) Lambda
+<Generic> Perform = Element -> Nothing
 
 for each <Element> in <Element> List /  
 Perform action with <Element> = 
     while (list _ has elements):
-        pefrom (elements _ next)
+        perform (elements _ next)
 
 Element = Generic
-<Generic> Rule = (Generic -> Boolean) Lambda
+<Generic> Rule = Generic -> Boolean
 
 for each <Element> in a <Element> List /  
 using <Number> as index starting in <offset> Number /  
-Perform action with <Element> =
+Perform action with <Element> = 
     perform( ( index of element in list ) + offset )
-    
+>> Shall be recursive, since get the index is expensive
 
-/ filter each <Element> in <Element> List / that <match> an <Element> Rule  = 
+/ filter each <Element> in <Element> List /  
+that <match> an <Element> Rule  = 
     filtered list = List
     while (list _ has elements):
         if match (elements _ next):

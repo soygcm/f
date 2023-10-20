@@ -31,47 +31,47 @@ get tasks from File =
     map each line in lines:
         task from line
 
-using System / get tasks from <db> File Name  =
-    file = open file name from system
-    get tasks from file
+using System / get tasks from <db> File Name = 
+    open db from system
+    _ get tasks from file
 
-using System / save Tasks in a <db> File Name  =
-    open file from system
-    write tasks in file
-    save file
+using System / save Tasks in a <db> File Name = 
+    open db from system
+    _ write tasks in 
+    _ save 
 
 > These are to work with tasks:
 
-get task from Line =
+get task from Line = 
     get / description and done = split line with "|"
     description = description and done in position 0
     done = description and done in position 1
     Task description, done
 
-get task from Arguments  =
+get task from Arguments  = 
     description = arguments in position 2
     Task
         description = description, 
         done = false
 
-get the / line for the db / from the Task  =
-    text (description, done)
+get the / line for the db / from the Task  = 
+    Text description, "|", done
 
-add Task to Tasks =
+add Task to Tasks = 
     tasks + task line for the db
 
 > These are to show messages in the CLI
 
-Show list of Tasks =
+Show list of Tasks = 
     show "To-Do List:"
     for each task in tasks:
         using <number> as index starting in 1:
-            show text (number, ". ", task)
+            show number, ". ", task
 
-Show tutorial =
+Show tutorial = 
     show "Usage: f todo.f add|list|remove [task]"
 
-Show add task tutorial =
+Show add task tutorial = 
     show "Usage: f todo.f add [task]"
 
 > This are the main functions
@@ -83,7 +83,7 @@ Show list in cli =
 
 using System, File Name <db> and Show we can /  
 add with Arguments =
-    we need to know if / Arguments have no task description =
+    we need to know if / Arguments have no task description = 
         size of arguments < 3
     if arguments have no task description:
         show add task tutorial
@@ -91,19 +91,19 @@ add with Arguments =
         tasks = get tasks from db
         task = get task from arguments
         add task to tasks
-        save tasks in a db
+        _ save tasks in a db
         
 
 using Arguments, System, Show and File Name <db> /  
-execute Command<"add"> = add with arguments
+execute Command <"add"> = add with arguments
 
 using System, Show and File Name <db> /  
-execute Command<"list"> = show list in cli
+execute Command <"list"> = show list in cli
 
 > This is the main program
 
 f =
-    we need to know if / Arguments have no commands =
+    we need to know if / Arguments have no commands = 
         size of arguments < 2
     arguments = arguments from cli
     if arguments have no commands: show tutorial

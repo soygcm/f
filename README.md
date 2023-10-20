@@ -105,15 +105,64 @@ you can / promote / the Student = student _ grade = + 1
 
 22. What is inmutabilidad y porque la necesitamos?
 
-23. Pattern matching
+23. Pattern matching: pattern, type, var name and destroy?
+
+*Defining a function with simple Type*
+
+```
+function with <explicit param name> and explicit Type
+function with implicit Param name and explicit type
+function with <"pattern"> and explicit Type and implicit param name
+function with <<"pattern"> explicit param name> and explicit Type
+```
+
+*Defining a function with simple Complex Type*
+
+```
+function with <explicit param name> and explicit <<Text> Complex> Type
+function with implicit <<Text> Complex> Param name and explicit type
+function with <"pattern"> and explicit <<Text> Complex> Type and implicit param name
+function with <<"pattern"> explicit param name> and explicit <<Text> Complex> Type
+```
+
+*Defining a function with simple Complex Type are like patterns*
+
+```
+function with <Cat> List
+function with <Dog> List
+function with <Empty> List
+function with <<Small> Cat> List
+```
+
+*Just pattern and Type?*
+
+```
+function with <things> <start, ...rest> List
+function with <Empty> List
+function with <<4, 5>> List
+function with <"0"> List
+function with <element name> List
+```
+
+*calling a function*
+
+```
+call with some implicit param name
+call with some <explicit param name>
+call with some "explicit value"
+```
 
 24. Recursion
+
+25. Lambdas: Some -> Other
 
 https://www.youtube.com/watch?v=mhkoWp5Akww&ab_channel=TheVimeagen
 
 
 https://www.youtube.com/watch?v=tDexugp8EmM&ab_channel=ThePrimeTime
 
+More languages and cool things
+https://www.youtube.com/watch?v=MKb4WD6mioE
 
 ## Examples
 
