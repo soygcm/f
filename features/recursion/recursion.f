@@ -38,4 +38,5 @@ pack List =
     packed list = Empty
     for each element in list:
         packed list = pack element to packed list
-        return reverse packed list
+        Nothing Else
+    return reverse packed list
