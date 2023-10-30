@@ -31,11 +31,11 @@ f =
         author = "Boris"
         editorial = "Simie"
 
-    book
-    _ read = true
+    book = book
+        _ read = true
 
     article =
-        book _ to article
+        book to article
 
     article blueprint =
         title = "Abogados",

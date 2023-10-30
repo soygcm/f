@@ -1,0 +1,5 @@
+## Running
+
+```
+cabal run haskell
+```

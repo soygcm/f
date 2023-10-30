@@ -32,7 +32,7 @@ age = 4
 
 Did you know that some coders and languages hates variables? they prefer constants or any other possibility as lazy, static, public, private, etc. With f you don't need to worry about this unnecesary concepts.
 
-## Types
+## Basic Types
 
 You can communicate with the computer and other coders using many data types: `Text, Number, Boolean, List`
 
@@ -203,22 +203,22 @@ is <c>, <z> Complex in mandelbrot Iterations =
 Efe includes hundreds of helpfull functions.
 Conditionals are a group of functions usefull to tell the computer what to do in different cases.
 
-* If `if condition lambda`
+* If `if Condition Lambda`
 
 ```
 if age > 18 : "Adult"
 ```
 
-* If else `if condition lambda else other lambda`
+* If else `if Condition <true lambda> else <false lambda> Lambda`
 
 ```
 if is c in mandelbrot iterations :
     show c, " is likely in the Mandelbrot set."
-else:
+else :
     show c, " is not in the Mandelbrot set."
 ```
 
-* When `when case lambda, case lambda, case lambda`
+* When `when Cases`
 
 ```
 when
@@ -226,7 +226,7 @@ when
     iterations == 0 : true
 ```
 
-* When `when value, case lambda, case lambda, case lambda, otherwise lambda`
+* When `when Value Cases otherwise Otherwise`
 
 ```
 age = ask "How old are you?"
@@ -253,9 +253,9 @@ Every time a lambda modify some exeternal variable, what is really happening is,
 
 ### Loops
 
-Efe doesn't have loops at all, just kiding.
+Efe doesn't have loops at all, just kiding we are not haskell.
 
-* Loop repeat `loop variables lambda`
+* Loop repeat `loop Inputs (Repeat -> Inputs)`
 
 ```
 ice creams = 3
@@ -267,7 +267,7 @@ loop helados, pizzas :
     repeat ice creams - 1, pizzas + 1
 ```
 
-* Iterate completed `iterate list lambda`
+* Iterate completed `iterate List (lambda)`
 
 ```
 ingredients = List
@@ -275,7 +275,7 @@ total = iterate 5 times :
     answer = ask "What do you want in your pizza? answer 'done' to finish."
     if answer == "done" : count ingredients
     if completed : count ingredients
-    ingredients = ingredients + answer
+    ingredients + answer
 ```
 
 `Number times` is a function that return a list from 0 to number.
@@ -311,6 +311,23 @@ There are many other popular loops:
 * `for each element in list / map with transformer`
 
 ... [continuara]
+
+### Custom Types
+
+### Inputs Outputs
+
+We have multiple functions to manage inputs and outputs for your program.
+
+* Show `show <Anything> List -> Output`
+
+```
+result = show "Hello", 4, true
+result => Output(Text("Hello Number(4) Boolean(true)"), System(), Time(), Program())
+```
+
+#### System
+#### Libraries
+
 
 <!-- 
 

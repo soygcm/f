@@ -1,6 +1,8 @@
 module Main where
-
+import TodoList
 import Test.HUnit
+import TodoList (showTasks)
+
 
 pack :: Eq a => [a] -> [[a]]
 pack lst = packAux lst []
@@ -13,12 +15,12 @@ pack lst = packAux lst []
         else packAux rest ([start] : superHead : superTail)
 
 
+test_all :: IO Counts
 test_all = runTestTT $ TestList
   [ 
     "Test 1" ~: pack ["a", "a", "a", "a", "b", "c", "c", "a", "a"]
     ~?= [["a", "a", "a", "a"], ["b"], ["c", "c"], ["a", "a"]]
   ]
 
-main = do
-  counts <- test_all
-  putStrLn "Tests Passed"
+main :: IO ()
+main = showTasks ["Hola", "Adios"]

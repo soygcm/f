@@ -63,7 +63,7 @@ add Task to Tasks =
 > These are to show messages in the CLI
 
 Show list of Tasks = 
-    show "To-Do List:"
+    show "To-Do List:" , new line ,
     for each task in tasks:
         using <number> as index starting in 1:
             show number, ". ", task
